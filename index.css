@@ -45,7 +45,7 @@ p {
     padding-top: 80px;
     padding-bottom: 30px;
     background-color: rgb(236, 237, 242);
-    color: #636363;
+    color: #202124;
 }
 
 .header {
@@ -59,26 +59,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #efefef;
-    /* background: #50a3a2;
-    background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
-    background: -moz-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
-    background: -o-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
-    background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%); */
+    background-color: #f8f9fa;
 }
 
 .nav {
     background-color: rgb(1, 28, 55);
 }
-
-/* .nav-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: rgb(1, 28, 55);
-} */
 
 .nav-section {
     width: 100%;
@@ -210,7 +196,6 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-bottom: 2px solid #333; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
@@ -266,7 +251,6 @@ p {
 
 .section-spaced {
     padding: 3.6rem 0;
-    background: linear-gradient(to bottom, #efefef, #fbfbfb);
 }
 
 .section {
@@ -319,13 +303,13 @@ p {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width:765px) {
+/* @media (max-width:765px) {
 
     #background-video,
     .video-overlay {
         display: none;
     }
-}
+} */
 
 /* Video Background CSS Ends */
 
@@ -370,8 +354,7 @@ p {
 
 .btn {
     padding: 1rem 2rem;
-    font-size: 2.3rem;
-    /* text-transform: uppercase; */
+    font-size: 1.6rem;
     font-weight: 700;
     border: none;
     border-radius: 8px;
@@ -396,8 +379,6 @@ p {
 }
 
 .portfolio-btn {
-    /* background-color: #003366;
-    color: #fff; */
     background-color: #fff;
     color: #003366;
 }
@@ -460,4 +441,20 @@ p {
 
 .contact-btn:hover {
     cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 1rem;
+    background-color: #003366;
+}
+
+.footer img {
+    width: 40px;
+}
+
+.footer span {
+    color: white;
 }
