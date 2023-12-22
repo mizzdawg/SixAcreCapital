@@ -48,6 +48,22 @@ p {
     color: #636363;
 }
 
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(-20%);
+}
+
+.slide-in {
+    animation: slide-in 1s forwards;
+}
+
+@keyframes slide-in {
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
 .header {
     font-size: 2.5rem;
     margin: 1.2rem;
