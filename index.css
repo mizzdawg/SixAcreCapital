@@ -48,6 +48,12 @@ p {
     color: #202124;
 }
 
+.animate-up {
+    opacity: 0;
+    transform: translateY(20%);
+    animation: slide-up 1s forwards;
+}
+
 .scroll-animate {
     opacity: 0;
     transform: translateY(20%);
