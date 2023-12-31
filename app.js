@@ -1,7 +1,7 @@
 let scrollElements;
 
 window.addEventListener(
-    "load",
+    "DOMContentLoaded",
     (event) => {
         scrollElements = document.querySelectorAll('.scroll-animate');
 
