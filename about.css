@@ -17,14 +17,14 @@
 }
 
 .about-banner img {
-    width: 500px;
+    width: 550px;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .article-container {
     width: 50%;
-    color: rgb(36, 28, 21)
+    color: rgb(36, 28, 21);
 }
 
 .article-section {
@@ -35,11 +35,49 @@
     margin-bottom: 30px;
 }
 
-.article-section span {
+.article-principle {
     font-weight: 700;
 }
 
 .article-header {
     font-size: 2.1rem;
     margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+}
+
+
+.project-img img {
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-size: cover;
+}
+
+.project-detail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.project-detail span {
+    color: rgb(109, 106, 104);
+    font-size: .9rem;
 }

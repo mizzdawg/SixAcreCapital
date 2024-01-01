@@ -465,7 +465,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
     background-color: #003366;
 }
 
