@@ -17,9 +17,19 @@
 }
 
 .about-banner img {
-    width: 550px;
+    width: 60%;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.section-transition {
+    width: 100%;
+    background-color: rgb(30, 115, 190);
+    line-height: 0;
+}
+
+.whoosh {
+    fill: #fff;
 }
 
 .article-container {
@@ -38,6 +48,8 @@
 .article-principle {
     font-weight: 700;
 }
+
+
 
 .article-header {
     font-size: 2.1rem;
