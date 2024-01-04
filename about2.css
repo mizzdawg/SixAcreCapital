@@ -27,7 +27,7 @@
 .about-section {
     width: 100%;
     max-width: 750px;
-    padding: 0px 10px;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,6 +40,12 @@
     background-image: url("images/phillyOnRiver.jpg");
     background-size: cover;
     background-position: 75% 25%;
+}
+
+@media (max-width: 425px) {
+    .about-hero-container {
+        height: 300px;
+    }
 }
 
 .about-hero-overlay {
@@ -75,6 +81,17 @@
     margin-bottom: 0;
 }
 
+@media (max-width: 760px) {
+    .about-subheader {
+        font-size: 2.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .about-paragraph {
+        font-size: 1.1rem;
+    }
+}
+
 .section-transition {
     width: 100%;
     background-color: rgb(30, 115, 190);
@@ -108,10 +125,32 @@
     margin-bottom: 10px;
 }
 
-.principle-icon {
+.principle-icon-container {
     font-size: 0;
+}
+
+.principle-icon {
+    width: 24px;
+}
+
+.principle-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-weight: 400;
+    margin-bottom: 1.3rem;
 }
 
 .principle-title {
     font-weight: 700;
+    line-height: 1.3rem;
+}
+
+@media (max-width: 760px) {
+    .principle-header {
+        margin-bottom: 20px;
+    }
+
+    .principle-paragraph {
+        font-size: 1rem;
+    }
 }
