@@ -18,6 +18,10 @@
     background-color: rgb(30, 115, 190);
 }
 
+.container-honeydew {
+    background: rgb(229, 244, 227);
+}
+
 .about-container {
     width: 100%;
     display: flex;
@@ -153,4 +157,74 @@
     .principle-paragraph {
         font-size: 1rem;
     }
+}
+
+
+.projects-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.projects-grid-row {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+}
+
+.project {
+    flex: 1 1 0;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.project-img {
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.proj-1 {
+    background-image: url("images/proj-1.webp");
+    background-position: 50% 10%;
+}
+
+.proj-2 {
+    background-image: url("images/proj-2.webp");
+    background-position: 50% 10%;
+}
+
+.proj-3 {
+    background-image: url("images/proj-3.webp");
+    background-position: 50% 10%;
+}
+
+.proj-4 {
+    background-image: url("images/proj-4.webp");
+    background-position: 50% 10%;
+}
+
+.proj-5 {
+    background-image: url("images/proj-5.webp");
+    background-position: 50% 10%;
+}
+
+.proj-6 {
+    background-image: url("images/proj-6.webp");
+    background-position: 50% 10%;
+}
+
+.proj-7 {
+    background-image: url("images/proj-7.webp");
+    background-position: 10% 50%;
+}
+
+.proj-8 {
+    background-image: url("images/proj-8.webp");
+    background-position: 50% 10%;
 }
