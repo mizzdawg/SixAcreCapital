@@ -18,8 +18,8 @@
     background-color: rgb(30, 115, 190);
 }
 
-.container-honeydew {
-    background: rgb(229, 244, 227);
+.container-lightgrey {
+    background: #e6e6e6;
 }
 
 .about-container {
@@ -163,18 +163,14 @@
 .projects-grid {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.projects-grid-row {
-    display: flex;
-    width: 100%;
-    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
 
 .project {
-    flex: 1 1 0;
+    width: 47.5%;
+    min-width: 310px;
     height: 450px;
     background-color: white;
     border-radius: 15px;
@@ -227,4 +223,12 @@
 .proj-8 {
     background-image: url("images/proj-8.webp");
     background-position: 50% 10%;
+}
+
+
+@media (max-width: 435px) {
+    .project {
+        width: 100%;
+        min-width: 200px;
+    }
 }
