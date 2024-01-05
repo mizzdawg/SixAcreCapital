@@ -87,6 +87,9 @@ p {
 
 .nav {
     background-color: rgb(1, 28, 55);
+    position: fixed;
+    top: 0;
+    z-index: 9999;
 }
 
 .nav-section {
@@ -333,6 +336,7 @@ p {
 
 .banner {
     height: calc(100vh - 90px);
+    margin-top: 90px;
     background-color: rgb(30, 115, 190);
 }
 
