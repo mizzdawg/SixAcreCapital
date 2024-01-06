@@ -1,4 +1,5 @@
 let scrollElements;
+let fadeElements;
 
 window.addEventListener(
     "DOMContentLoaded",
@@ -16,7 +17,7 @@ function createObserver() {
     let options = {
         root: null,
         rootMargin: "0px",
-        threshold: .1
+        threshold: .18
     };
 
     observer = new IntersectionObserver(handleIntersect, options);

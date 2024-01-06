@@ -78,12 +78,12 @@ p {
 .animate-up {
     opacity: 0;
     transform: translateY(20%);
-    animation: slide-up 1s forwards;
+    animation: slide-fade-up 1s forwards;
 }
 
 .scroll-animate {
     opacity: 0;
-    transform: translateY(20%);
+    /* transform: translateY(20%); */
 }
 
 .slide-up {
@@ -91,6 +91,14 @@ p {
 }
 
 @keyframes slide-up {
+
+    100% {
+        opacity: 1;
+        /* transform: translateY(0%); */
+    }
+}
+
+@keyframes slide-fade-up {
 
     100% {
         opacity: 1;
@@ -445,6 +453,7 @@ p {
 .portfolio-btn {
     background-color: #fff;
     color: #2b2b2b;
+    position: relative;
 }
 
 
