@@ -27,7 +27,6 @@ html {
 }
 
 body {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -585,4 +584,11 @@ p {
 
 .footer span {
     color: white;
+}
+
+.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }

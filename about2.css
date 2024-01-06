@@ -39,6 +39,7 @@
 }
 
 .about-hero-container {
+    margin-top: 90px;
     height: 500px;
     position: relative;
     background-image: url("images/phillyOnRiver.jpg");
