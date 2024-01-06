@@ -440,6 +440,10 @@ p {
     color: rgb(30, 115, 190);
 }
 
+
+
+/* Meet our Team Panels CSS Starts */
+
 .section-panel {
     flex: 1 1 0;
     background-color: rgba(240, 246, 255, 1);
@@ -471,7 +475,7 @@ p {
 .headshot {
     height: 200px;
     border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 }
 
 @media (max-width: 900px) {
@@ -492,10 +496,40 @@ p {
     margin-bottom: 0;
 }
 
-.panel-title a {
+.panel-icon-container {
     margin-top: 4px;
-    line-height: 0;
 }
+
+.panel-icon-link {
+    display: inline-block;
+    line-height: 0;
+    padding: 3px;
+}
+
+.panel-social-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.link-adj {
+    transform: translateX(-3px);
+}
+
+.link-adj-dynamic {
+    transform: translateX(3px);
+}
+
+@media (max-width: 1020px) {
+    .link-adj-dynamic {
+        transform: translateX(-3px);
+    }
+}
+
+
+/* Meet our Team Panels CSS Ends */
+
+
+
 
 .contact-btn {
     background-color: #fff;
