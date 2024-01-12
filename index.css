@@ -599,20 +599,50 @@ p {
 /* Contact Us CSS Starts */
 
 .contact-container {
-    position: relative;
-    min-height: calc(100vh - 90px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contact-hero-container {
     margin-top: 90px;
+    height: 500px;
+    position: relative;
     background-image: url("images/phillySunSet.jpg");
     background-size: cover;
     background-position: 75% 25%;
 }
 
-.contact-overlay {
+.contact-hero-overlay {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
 }
+
+.contact-section {
+    width: 100%;
+    max-width: 750px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+@media (max-width: 425px) {
+    .contact-hero-container {
+        height: 300px;
+    }
+}
+
+.contact-hero-title {
+    color: white;
+    font-size: 3.2rem;
+}
+
 
 /* Contact Us CSS Ends */
