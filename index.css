@@ -624,8 +624,9 @@ p {
 
 .contact-section {
     width: 100%;
-    max-width: 750px;
+    max-width: 950px;
     padding: 0px 20px;
+    margin: 3rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -647,6 +648,29 @@ p {
 
 .contact-method {
     width: 50%;
+    padding: 30px 5px;
+}
+
+.contact-icon,
+.contact-icon a svg {
+    width: 1.5rem;
+    fill: #333;
+    margin-bottom: 5px;
+}
+
+.contact-title {
+    margin-bottom: 5px;
+}
+
+.contact-title h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #333;
+}
+
+.social-contacts-container {
+    display: flex;
+    gap: 10px;
 }
 
 .contact-form {
