@@ -633,6 +633,35 @@ p {
     z-index: 10;
 }
 
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-method-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-method {
+    width: 50%;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    width: 80%;
+}
+
+.form-section {
+    width: 100%;
+}
+
 @media (max-width: 425px) {
     .contact-hero-container {
         height: 300px;
