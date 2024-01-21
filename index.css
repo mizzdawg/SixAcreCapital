@@ -624,8 +624,7 @@ p {
 
 .contact-section {
     width: 100%;
-    max-width: 950px;
-    padding: 0px 20px;
+    max-width: 1024px;
     margin: 3rem 0;
     display: flex;
     flex-direction: column;
@@ -634,7 +633,18 @@ p {
     z-index: 10;
 }
 
+.contact-section-subheader {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-section-msg {
+    font-size: 1rem;
+    margin-bottom: 4rem;
+}
+
 .contact-info {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -642,13 +652,14 @@ p {
 }
 
 .contact-method-container {
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
 }
 
 .contact-method {
     width: 50%;
-    padding: 30px 5px;
+    padding: 20px 5px;
 }
 
 .contact-icon,
@@ -663,9 +674,8 @@ p {
 }
 
 .contact-title h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 800;
-    color: #333;
 }
 
 .social-contacts-container {
@@ -674,16 +684,45 @@ p {
 }
 
 .contact-form {
+    width: 40%;
     display: flex;
     justify-content: center;
 }
 
 .form {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-section {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 15px;
+}
+
+.form-section label {
+    font-size: .8rem;
+}
+
+.form-section input,
+.form-section textarea {
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+
+.form-section textarea {
+    height: 100px;
+}
+
+.form-submit {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    padding: 10px 0px;
 }
 
 @media (max-width: 425px) {
