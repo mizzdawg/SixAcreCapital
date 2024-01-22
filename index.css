@@ -626,6 +626,7 @@ p {
     width: 100%;
     max-width: 1024px;
     margin: 3rem 0;
+    padding: 0 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -655,6 +656,17 @@ p {
     width: 60%;
     display: flex;
     flex-wrap: wrap;
+}
+
+@media (max-width: 950px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-method-container {
+        width: 100%;
+    }
 }
 
 .contact-method {
