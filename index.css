@@ -844,3 +844,49 @@ p {
     color: white;
     font-size: 3.2rem;
 }
+
+/* In the Press CSS */
+
+.press-container {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.press-link {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 15px;
+}
+
+.press-link:hover {
+    cursor: pointer;
+}
+
+.press-item img {
+    height: 400px;
+}
+
+@media (max-width:768px) {
+    .press-item img {
+        height: 300px;
+    }
+}
+
+@media (max-width:600px) {
+    .press-container {
+        width: 100%;
+    }
+}
+
+@media (max-width:460px) {
+    .press-item img {
+        height: auto;
+        width: 100%;
+    }
+}
