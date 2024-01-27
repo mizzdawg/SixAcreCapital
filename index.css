@@ -782,3 +782,65 @@ p {
 
 
 /* Contact Us CSS Ends */
+
+/* page hero banner CSS */
+
+.page-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-section {
+    width: 100%;
+    max-width: 750px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-hero-container {
+    margin-top: 90px;
+    height: 500px;
+    position: relative;
+    background-size: cover;
+    background-position: 75% 25%;
+}
+
+.team-hero-container {
+    background-image: url("images/phillyFromAbove.jpg");
+}
+
+.portfolio-hero-container {
+    background-image: url("images/phillySkyline.jpg");
+}
+
+.press-hero-container {
+    background-image: url("images/phillyBridge.jpg");
+}
+
+@media (max-width: 425px) {
+    .page-hero-container {
+        height: 300px;
+    }
+}
+
+.page-hero-overlay {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-hero {
+    z-index: 10;
+}
+
+.page-hero-title {
+    color: white;
+    font-size: 3.2rem;
+}
