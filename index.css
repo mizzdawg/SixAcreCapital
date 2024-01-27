@@ -674,15 +674,35 @@ p {
     padding: 20px 5px;
 }
 
+@media (max-width: 950px) {
+    .contact-method {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-detail {
+        text-align: center;
+    }
+}
+
+.contact-method-header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-title {
+    margin-left: 8px;
+}
+
 .contact-icon,
 .contact-icon a svg {
     width: 1.5rem;
     fill: #333;
-    margin-bottom: 5px;
-}
-
-.contact-title {
-    margin-bottom: 5px;
+    line-height: 0;
 }
 
 .contact-title h3 {
@@ -699,6 +719,18 @@ p {
     width: 40%;
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 950px) {
+    .contact-form {
+        width: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-form {
+        width: 100%;
+    }
 }
 
 .form {
