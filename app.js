@@ -45,3 +45,34 @@ function toggleMenu() {
     mobileMenu.classList.toggle('display-mobile');
     mobileMenu.classList.toggle('hide-mobile');
 }
+
+
+
+// Portfolio Slideshow JS
+let slideIndex = 0;
+const slides = document.querySelector(".slideshow-container").children;
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+
+handleClick(0);
+
+prevBtn.addEventListener("click", () => {
+    handleClick(-1);
+});
+
+nextBtn.addEventListener("click", () => {
+    handleClick(1);
+});
+
+function handleClick(n) {
+    slideIndex += n;
+    if (slideIndex > slides.length - 1) { slideIndex = 0 };
+    if (slideIndex < 0) { slideIndex = slides.length - 1 };
+    console.log(slides.length);
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+}
+
+
