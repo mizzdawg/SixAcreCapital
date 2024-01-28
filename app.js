@@ -49,30 +49,67 @@ function toggleMenu() {
 
 
 // Portfolio Slideshow JS
-let slideIndex = 0;
-const slides = document.querySelector(".slideshow-container").children;
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
+// let slideIndex = 0;
+// const slides = document.querySelector(".slideshow-container").children;
+// const prevBtn = document.querySelector(".prev");
+// const nextBtn = document.querySelector(".next");
 
-handleClick(0);
+// handleClick(0);
 
-prevBtn.addEventListener("click", () => {
-    handleClick(-1);
-});
+// prevBtn.addEventListener("click", () => {
+//     handleClick(-1);
+// });
 
-nextBtn.addEventListener("click", () => {
-    handleClick(1);
-});
+// nextBtn.addEventListener("click", () => {
+//     handleClick(1);
+// });
 
-function handleClick(n) {
-    slideIndex += n;
-    if (slideIndex > slides.length - 1) { slideIndex = 0 };
-    if (slideIndex < 0) { slideIndex = slides.length - 1 };
-    console.log(slides.length);
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+// function handleClick(n) {
+//     slideIndex += n;
+//     if (slideIndex > slides.length - 1) { slideIndex = 0 };
+//     if (slideIndex < 0) { slideIndex = slides.length - 1 };
+//     console.log(slides.length);
+//     for (i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none";
+//     }
+//     slides[slideIndex].style.display = "block";
+// }
+
+let slideIndexes = [0, 0, 0];
+const slideShows = document.querySelectorAll(".slideshow-container");
+const prevBtns = document.querySelectorAll(".prev");
+const nextBtns = document.querySelectorAll(".next");
+
+slideShows.forEach((show, i) => {
+    let slides = show.children;
+    for (j = 0; j < slides.length; j++) {
+        slides[j].style.display = "none";
     }
-    slides[slideIndex].style.display = "block";
+    slides[0].style.display = "block";
+})
+
+prevBtns.forEach((btn, i) => {
+    btn.addEventListener("click", (e) => {
+        handleClick(-1, i);
+    });
+})
+
+nextBtns.forEach((btn, i) => {
+    btn.addEventListener("click", (e) => {
+        handleClick(1, i);
+    })
+})
+
+function handleClick(n, i) {
+    let slides = slideShows[i].children;
+    slideIndexes[i] += n;
+    if (slideIndexes[i] > slides.length - 1) { slideIndexes[i] = 0 };
+    if (slideIndexes[i] < 0) { slideIndexes[i] = slides.length - 1 };
+    for (j = 0; j < slides.length; j++) {
+        slides[j].style.display = "none";
+    }
+    let slide = slideIndexes[i];
+    slides[slide].style.display = "block";
 }
 
 
