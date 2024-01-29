@@ -48,6 +48,11 @@ p {
     color: #202124;
 }
 
+.ptb-4 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
 .mtb-5 {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -68,6 +73,10 @@ p {
 
 .container-darkgrey {
     background-color: rgb(43, 43, 43);
+}
+
+.container-lightgrey {
+    background-color: rgb(247, 247, 247);
 }
 
 .home-subheader {
@@ -756,6 +765,7 @@ p {
 .form-section textarea {
     border: 1px solid #333;
     border-radius: 3px;
+    padding: 8px;
 }
 
 .form-section textarea {
@@ -766,7 +776,7 @@ p {
     background-color: black;
     color: white;
     font-weight: 600;
-    padding: 10px 0px;
+    padding: 15px 0px !important;
 }
 
 @media (max-width: 425px) {
@@ -894,34 +904,61 @@ p {
 
 /* Portfolio CSS */
 
+.portfolio-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: rgb(240 246 255 / 1);
+    border-radius: 15px;
+}
+
 .slideshow-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: lightgray;
+}
+
+.slide-title {
+    font-weight: 700;
+    line-height: 1.1rem;
+    text-justify: none;
 }
 
 .slide {
     display: none;
-    width: 80%;
-    height: 250px;
+    text-align: center;
+    width: 90%;
+    height: 275px;
 }
 
-.orange {
-    background-color: orange;
+@media (max-width: 500px) {
+    .slide {
+        height: 150px;
+    }
 }
 
-.blue {
-    background-color: blue;
+.slide img {
+    height: 100%;
 }
 
-.green {
-    background-color: green;
+.btn-container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.yellow {
-    background-color: yellow;
+.btn-container button {
+    width: 100px;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 1px solid rgb(216 221 229 / 1);
+    border-radius: 15px;
+    cursor: pointer;
 }
 
 .fade {

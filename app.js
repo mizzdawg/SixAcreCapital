@@ -75,7 +75,7 @@ function toggleMenu() {
 //     slides[slideIndex].style.display = "block";
 // }
 
-let slideIndexes = [0, 0, 0];
+let slideIndexes = [0, 0, 0, 0];
 const slideShows = document.querySelectorAll(".slideshow-container");
 const prevBtns = document.querySelectorAll(".prev");
 const nextBtns = document.querySelectorAll(".next");
